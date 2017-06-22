@@ -35,11 +35,26 @@ namespace Cliente_Estudiante
                 + " " + txtbox_apellido_cliente_estudiante.Text + " " + txtbox_contrasena_cliente_estudiante.Text
                 + " " + txtbox_confirmarcontrasena_cliente_estudiante.Text + " " + txtbox_email_cliente_estudiante.Text
                 + " " + dtPckNacimiento.Text);
+
+            try {
+                // TODO: Agregar validacion de datos
+                // TODO: Agregar coneccion con servidor
+                // TODO: Agregar mensage de confirmacion
+                // TODO: Agregar mensage de error
+
+                Login.Instance.Show();
+                this.Close();
+            }
+            catch (Exception exp) {
+                // TODO: Agregar notificacion a log de error
+            }
+
         }
 
         private void btn_cancelar_cliente_estudiante_Click(object sender, EventArgs e)
         {
-
+            Login.Instance.Show();
+            this.Close();
         }
     }
 }
