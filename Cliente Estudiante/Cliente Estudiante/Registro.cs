@@ -12,15 +12,14 @@ namespace Cliente_Estudiante
 {
     public partial class Registro : Form
     {
-     
         public Registro()
         {
             InitializeComponent();
         }
 
-
         private void Registro_Load(object sender, EventArgs e)
         {
+
         }
 
         protected override void OnClosing(CancelEventArgs e)
@@ -48,7 +47,6 @@ namespace Cliente_Estudiante
             catch (Exception exp) {
                 // TODO: Agregar notificacion a log de error
             }
-
         }
 
         private void btn_cancelar_cliente_estudiante_Click(object sender, EventArgs e)

@@ -214,14 +214,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 252);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(349, 242);
             this.Controls.Add(this.dtPckNacimiento);
             this.Controls.Add(this.lbl_nacimiento_cliente_estudiante);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btn_cancelar_cliente_estudiante);
             this.Controls.Add(this.btn_aceptar_cliente_estudiante);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(365, 281);
+            this.MinimumSize = new System.Drawing.Size(365, 281);
             this.Name = "Registro";
-            this.Text = "Registro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro Reading Butler";
             this.Load += new System.EventHandler(this.Registro_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

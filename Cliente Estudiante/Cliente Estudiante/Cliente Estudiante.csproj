@@ -59,6 +59,12 @@
     <Compile Include="Registro.designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentWorkStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentWorkStation.Designer.cs">
+      <DependentUpon>StudentWorkStation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +79,9 @@
     </Compile>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentWorkStation.resx">
+      <DependentUpon>StudentWorkStation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
