@@ -1,6 +1,6 @@
 ﻿namespace Cliente_Estudiante
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.conectar_client_estudiante = new System.Windows.Forms.Button();
+            this.nombre_usuario_cliente_estudiante = new System.Windows.Forms.Label();
+            this.password_cliente_estudiante = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Logo
+            // 
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(13, 13);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(120, 120);
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
+            // conectar_client_estudiante
+            // 
+            this.conectar_client_estudiante.Location = new System.Drawing.Point(143, 145);
+            this.conectar_client_estudiante.Name = "conectar_client_estudiante";
+            this.conectar_client_estudiante.Size = new System.Drawing.Size(75, 23);
+            this.conectar_client_estudiante.TabIndex = 1;
+            this.conectar_client_estudiante.Text = "Conectar";
+            this.conectar_client_estudiante.UseVisualStyleBackColor = true;
+            // 
+            // nombre_usuario_cliente_estudiante
+            // 
+            this.nombre_usuario_cliente_estudiante.AutoSize = true;
+            this.nombre_usuario_cliente_estudiante.Location = new System.Drawing.Point(139, 13);
+            this.nombre_usuario_cliente_estudiante.Name = "nombre_usuario_cliente_estudiante";
+            this.nombre_usuario_cliente_estudiante.Size = new System.Drawing.Size(98, 13);
+            this.nombre_usuario_cliente_estudiante.TabIndex = 2;
+            this.nombre_usuario_cliente_estudiante.Text = "Nombre de Usuario";
+            this.nombre_usuario_cliente_estudiante.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // password_cliente_estudiante
+            // 
+            this.password_cliente_estudiante.AutoSize = true;
+            this.password_cliente_estudiante.Location = new System.Drawing.Point(140, 62);
+            this.password_cliente_estudiante.Name = "password_cliente_estudiante";
+            this.password_cliente_estudiante.Size = new System.Drawing.Size(61, 13);
+            this.password_cliente_estudiante.TabIndex = 3;
+            this.password_cliente_estudiante.Text = "Contraseña";
+            this.password_cliente_estudiante.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(140, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(175, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(140, 79);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(175, 20);
+            this.textBox2.TabIndex = 5;
+            // 
+            // Login
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(327, 181);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password_cliente_estudiante);
+            this.Controls.Add(this.nombre_usuario_cliente_estudiante);
+            this.Controls.Add(this.conectar_client_estudiante);
+            this.Controls.Add(this.Logo);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(343, 220);
+            this.MinimumSize = new System.Drawing.Size(343, 220);
+            this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reading Butler - Login";
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.Button conectar_client_estudiante;
+        private System.Windows.Forms.Label nombre_usuario_cliente_estudiante;
+        private System.Windows.Forms.Label password_cliente_estudiante;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
