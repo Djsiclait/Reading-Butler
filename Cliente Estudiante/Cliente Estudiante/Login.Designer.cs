@@ -37,6 +37,7 @@
             this.nombre_usuario_texto_cliente_estudiante = new System.Windows.Forms.TextBox();
             this.password_texto_cliente_estudiante = new System.Windows.Forms.TextBox();
             this.login_tooltip_cliente_estudiante = new System.Windows.Forms.ToolTip(this.components);
+            this.enlace_registro_cliente_estudiante = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             // 
             // conectar_client_estudiante
             // 
+            this.conectar_client_estudiante.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.conectar_client_estudiante.Location = new System.Drawing.Point(185, 110);
             this.conectar_client_estudiante.Name = "conectar_client_estudiante";
             this.conectar_client_estudiante.Size = new System.Drawing.Size(75, 23);
@@ -85,7 +87,7 @@
             this.nombre_usuario_texto_cliente_estudiante.Name = "nombre_usuario_texto_cliente_estudiante";
             this.nombre_usuario_texto_cliente_estudiante.Size = new System.Drawing.Size(175, 20);
             this.nombre_usuario_texto_cliente_estudiante.TabIndex = 4;
-            this.login_tooltip_cliente_estudiante.SetToolTip(this.nombre_usuario_texto_cliente_estudiante, "johnSmith1234");
+            this.login_tooltip_cliente_estudiante.SetToolTip(this.nombre_usuario_texto_cliente_estudiante, "ej: johnSmith1234");
             this.nombre_usuario_texto_cliente_estudiante.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // password_texto_cliente_estudiante
@@ -100,12 +102,24 @@
             this.login_tooltip_cliente_estudiante.AutomaticDelay = 1000;
             this.login_tooltip_cliente_estudiante.Popup += new System.Windows.Forms.PopupEventHandler(this.nombre_tooltip_cliente_estudiante_Popup);
             // 
+            // enlace_registro_cliente_estudiante
+            // 
+            this.enlace_registro_cliente_estudiante.AutoSize = true;
+            this.enlace_registro_cliente_estudiante.Location = new System.Drawing.Point(117, 142);
+            this.enlace_registro_cliente_estudiante.Name = "enlace_registro_cliente_estudiante";
+            this.enlace_registro_cliente_estudiante.Size = new System.Drawing.Size(84, 13);
+            this.enlace_registro_cliente_estudiante.TabIndex = 6;
+            this.enlace_registro_cliente_estudiante.TabStop = true;
+            this.enlace_registro_cliente_estudiante.Text = "Registrarse Aqui";
+            this.enlace_registro_cliente_estudiante.VisitedLinkColor = System.Drawing.Color.Blue;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(327, 140);
+            this.ClientSize = new System.Drawing.Size(327, 164);
+            this.Controls.Add(this.enlace_registro_cliente_estudiante);
             this.Controls.Add(this.password_texto_cliente_estudiante);
             this.Controls.Add(this.nombre_usuario_texto_cliente_estudiante);
             this.Controls.Add(this.password_cliente_estudiante);
@@ -113,8 +127,8 @@
             this.Controls.Add(this.conectar_client_estudiante);
             this.Controls.Add(this.Logo);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(343, 179);
-            this.MinimumSize = new System.Drawing.Size(343, 179);
+            this.MaximumSize = new System.Drawing.Size(343, 203);
+            this.MinimumSize = new System.Drawing.Size(343, 203);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reading Butler - Login";
@@ -133,6 +147,7 @@
         private System.Windows.Forms.TextBox nombre_usuario_texto_cliente_estudiante;
         private System.Windows.Forms.TextBox password_texto_cliente_estudiante;
         private System.Windows.Forms.ToolTip login_tooltip_cliente_estudiante;
+        private System.Windows.Forms.LinkLabel enlace_registro_cliente_estudiante;
     }
 }
 
