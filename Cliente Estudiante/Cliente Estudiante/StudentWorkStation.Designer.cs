@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menu_workstation_cliente_estudiante = new System.Windows.Forms.MenuStrip();
+            this.pb_avatar_cliente_estudiante = new System.Windows.Forms.PictureBox();
+            this.ms_menu_workstation_cliente_estudiante = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,28 +40,30 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.volverAlInicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajosCorregidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menu_workstation_cliente_estudiante.SuspendLayout();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar_cliente_estudiante)).BeginInit();
+            this.ms_menu_workstation_cliente_estudiante.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pb_avatar_cliente_estudiante
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 88);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pb_avatar_cliente_estudiante.Location = new System.Drawing.Point(12, 27);
+            this.pb_avatar_cliente_estudiante.Name = "pb_avatar_cliente_estudiante";
+            this.pb_avatar_cliente_estudiante.Size = new System.Drawing.Size(147, 149);
+            this.pb_avatar_cliente_estudiante.TabIndex = 0;
+            this.pb_avatar_cliente_estudiante.TabStop = false;
             // 
-            // menu_workstation_cliente_estudiante
+            // ms_menu_workstation_cliente_estudiante
             // 
-            this.menu_workstation_cliente_estudiante.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ms_menu_workstation_cliente_estudiante.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ms_menu_workstation_cliente_estudiante.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.opciónToolStripMenuItem});
-            this.menu_workstation_cliente_estudiante.Location = new System.Drawing.Point(0, 0);
-            this.menu_workstation_cliente_estudiante.Name = "menu_workstation_cliente_estudiante";
-            this.menu_workstation_cliente_estudiante.Size = new System.Drawing.Size(663, 24);
-            this.menu_workstation_cliente_estudiante.TabIndex = 1;
-            this.menu_workstation_cliente_estudiante.Text = "menuStrip1";
+            this.ms_menu_workstation_cliente_estudiante.Location = new System.Drawing.Point(0, 0);
+            this.ms_menu_workstation_cliente_estudiante.Name = "ms_menu_workstation_cliente_estudiante";
+            this.ms_menu_workstation_cliente_estudiante.Size = new System.Drawing.Size(693, 24);
+            this.ms_menu_workstation_cliente_estudiante.TabIndex = 1;
+            this.ms_menu_workstation_cliente_estudiante.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
@@ -138,15 +140,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 326);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.menu_workstation_cliente_estudiante);
-            this.MainMenuStrip = this.menu_workstation_cliente_estudiante;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(693, 364);
+            this.Controls.Add(this.pb_avatar_cliente_estudiante);
+            this.Controls.Add(this.ms_menu_workstation_cliente_estudiante);
+            this.MainMenuStrip = this.ms_menu_workstation_cliente_estudiante;
             this.Name = "StudentWorkStation";
             this.Text = "Reading Butler WorkStation";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menu_workstation_cliente_estudiante.ResumeLayout(false);
-            this.menu_workstation_cliente_estudiante.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar_cliente_estudiante)).EndInit();
+            this.ms_menu_workstation_cliente_estudiante.ResumeLayout(false);
+            this.ms_menu_workstation_cliente_estudiante.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,8 +157,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MenuStrip menu_workstation_cliente_estudiante;
+        private System.Windows.Forms.PictureBox pb_avatar_cliente_estudiante;
+        private System.Windows.Forms.MenuStrip ms_menu_workstation_cliente_estudiante;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miPerfilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDeTrabajosToolStripMenuItem1;
@@ -166,5 +169,6 @@
         private System.Windows.Forms.ToolStripMenuItem volverAlInicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
