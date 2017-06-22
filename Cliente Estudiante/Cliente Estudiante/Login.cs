@@ -12,8 +12,11 @@ namespace Cliente_Estudiante
 {
     public partial class Login : Form
     {
+        public static Login Instance;
+
         public Login()
         {
+            Instance = this;
             InitializeComponent();
         }
 
@@ -46,7 +49,12 @@ namespace Cliente_Estudiante
         {
             Registro registro = new Registro();
             registro.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
