@@ -41,5 +41,12 @@ namespace Cliente_Estudiante
         {
 
         }
+
+        private void enlace_registro_cliente_estudiante_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registro registro = new Registro();
+            registro.Show();
+            this.Close();
+        }
     }
 }

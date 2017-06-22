@@ -112,6 +112,7 @@
             this.enlace_registro_cliente_estudiante.TabStop = true;
             this.enlace_registro_cliente_estudiante.Text = "Registrarse Aqui";
             this.enlace_registro_cliente_estudiante.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.enlace_registro_cliente_estudiante.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.enlace_registro_cliente_estudiante_LinkClicked);
             // 
             // Login
             // 
