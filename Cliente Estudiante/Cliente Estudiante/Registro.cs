@@ -12,6 +12,7 @@ namespace Cliente_Estudiante
 {
     public partial class Registro : Form
     {
+     
         public Registro()
         {
             InitializeComponent();
@@ -20,6 +21,12 @@ namespace Cliente_Estudiante
 
         private void Registro_Load(object sender, EventArgs e)
         {
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            Login.Instance.Show();
+            base.OnClosing(e);
         }
 
         private void btn_aceptar_cliente_estudiante_Click(object sender, EventArgs e)
