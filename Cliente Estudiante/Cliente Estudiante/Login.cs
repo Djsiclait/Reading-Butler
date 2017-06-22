@@ -26,5 +26,15 @@ namespace Cliente_Estudiante
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nombre_tooltip_cliente_estudiante_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }
