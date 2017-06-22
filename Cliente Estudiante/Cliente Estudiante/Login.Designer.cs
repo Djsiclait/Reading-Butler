@@ -51,12 +51,13 @@
             // 
             // conectar_client_estudiante
             // 
+            this.conectar_client_estudiante.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.conectar_client_estudiante.Location = new System.Drawing.Point(185, 110);
             this.conectar_client_estudiante.Name = "conectar_client_estudiante";
             this.conectar_client_estudiante.Size = new System.Drawing.Size(75, 23);
             this.conectar_client_estudiante.TabIndex = 1;
             this.conectar_client_estudiante.Text = "Conectar";
-            this.conectar_client_estudiante.UseVisualStyleBackColor = true;
+            this.conectar_client_estudiante.UseVisualStyleBackColor = false;
             // 
             // nombre_usuario_cliente_estudiante
             // 
@@ -84,7 +85,7 @@
             this.nombre_usuario_texto_cliente_estudiante.Name = "nombre_usuario_texto_cliente_estudiante";
             this.nombre_usuario_texto_cliente_estudiante.Size = new System.Drawing.Size(175, 20);
             this.nombre_usuario_texto_cliente_estudiante.TabIndex = 4;
-            this.login_tooltip_cliente_estudiante.SetToolTip(this.nombre_usuario_texto_cliente_estudiante, "johnSmith1234");
+            this.login_tooltip_cliente_estudiante.SetToolTip(this.nombre_usuario_texto_cliente_estudiante, "ej: johnSmith1234");
             this.nombre_usuario_texto_cliente_estudiante.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // password_texto_cliente_estudiante
