@@ -36,5 +36,10 @@ namespace Cliente_Estudiante
         {
 
         }
+
+        private void conectar_client_estudiante_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,6 +57,7 @@
             this.conectar_client_estudiante.TabIndex = 1;
             this.conectar_client_estudiante.Text = "Conectar";
             this.conectar_client_estudiante.UseVisualStyleBackColor = true;
+            this.conectar_client_estudiante.Click += new System.EventHandler(this.conectar_client_estudiante_Click);
             // 
             // nombre_usuario_cliente_estudiante
             // 
