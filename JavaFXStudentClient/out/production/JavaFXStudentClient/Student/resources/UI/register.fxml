@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.Controllers.RegisterController">
+   <children>
+      <Label fx:id="chooseAvatar_label" layoutX="14.0" layoutY="14.0" text="Elija tu avatar" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="imageSelector_anchorpane" layoutX="14.0" layoutY="34.0" prefHeight="200.0" prefWidth="575.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="34.0" />
+      <Label fx:id="firstname_label" layoutX="317.0" layoutY="262.0" text="Nombre" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="262.0" />
+      <Label fx:id="lastname_label" layoutX="317.0" layoutY="315.0" text="Apellido" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="315.0" />
+      <Label fx:id="username_label" layoutX="46.0" layoutY="262.0" text="Nombre de Usuario" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="262.0" />
+      <Label fx:id="password_label" layoutX="56.0" layoutY="314.0" text="Contraseña" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="314.0" />
+      <Label fx:id="confirmPassword_label" layoutX="46.0" layoutY="372.0" text="Confirmar Contraseña" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="372.0" />
+      <Label layoutX="317.0" layoutY="372.0" text="E-mail" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="372.0" />
+      <TextField fx:id="username_textfield" layoutX="46.0" layoutY="279.0" prefHeight="25.0" prefWidth="241.0" promptText="ej: jsmith_23" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="279.0" />
+      <PasswordField fx:id="password_passwordfield" layoutX="46.0" layoutY="332.0" prefHeight="25.0" prefWidth="241.0" promptText="Debe tener minimo 8 carácteres" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="332.0" />
+      <PasswordField fx:id="confirmPassword_passwordfield" layoutX="46.0" layoutY="389.0" prefHeight="25.0" prefWidth="241.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="389.0" />
+      <TextField fx:id="firstname_textfield" layoutX="317.0" layoutY="279.0" prefHeight="25.0" prefWidth="241.0" promptText="ej: John" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="279.0" />
+      <TextField fx:id="lastname_textfield" layoutX="317.0" layoutY="332.0" prefHeight="25.0" prefWidth="241.0" promptText="ej: Smith" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="332.0" />
+      <TextField fx:id="email_textfield" layoutX="317.0" layoutY="389.0" prefHeight="25.0" prefWidth="241.0" promptText="ej: jsmith23@email.com" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="389.0" />
+      <Button fx:id="cancel_button" cancelButton="true" layoutX="207.0" layoutY="493.0" mnemonicParsing="false" style="-fx-background-color: #ff2a12; -fx-border-color: red;" text="Cancelar" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="493.0" />
+      <Button fx:id="submit_button" layoutX="334.0" layoutY="493.0" mnemonicParsing="false" style="-fx-background-color: #02d11d; -fx-border-color: green;" text="Aceptar" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="493.0" />
+      <Label fx:id="birthdate_label" layoutX="201.0" layoutY="435.0" text="Fecha de Nacimiento" AnchorPane.leftAnchor="201.0" AnchorPane.topAnchor="435.0" />
+      <DatePicker fx:id="birthdate_datePicker" layoutX="201.0" layoutY="452.0" prefHeight="25.0" prefWidth="199.0" promptText="Deber ser mayor de 10 años" AnchorPane.leftAnchor="201.0" AnchorPane.topAnchor="452.0" />
+   </children>
+</AnchorPane>
