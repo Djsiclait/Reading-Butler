@@ -16,7 +16,7 @@ public class LoginController {
     // Main App
     private Main mainApp;
 
-    // FXMLS
+    // FXMLs
     @FXML
     TextField username_textfield;
     @FXML
