@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.Controllers.WorkbenchController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="875.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <Menu mnemonicParsing="false" text="Trabajos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Ver Lista de Trabajos" />
+                        <MenuItem mnemonicParsing="false" text="Ver Trabajos Calificados" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Ver Mis Estadisticas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Reportar Error" />
+                  <MenuItem mnemonicParsing="false" text="Ver Manual de Usuario" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cambiar Grupo" />
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="studentAvatar_imageView" fitHeight="209.0" fitWidth="199.0" layoutX="11.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="29.0">
+         <image>
+            <Image url="@../img/headshot.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="calendarArea_anchorPane" layoutX="236.0" layoutY="35.0" prefHeight="344.0" prefWidth="635.0" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="35.0" />
+      <Label fx:id="username_label" layoutX="11.0" layoutY="249.0" text="Nombre de Usuario" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="249.0" />
+      <Label fx:id="group_label" layoutX="11.0" layoutY="279.0" text="Grupo: Bomberos" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="279.0" />
+      <Label fx:id="level_label" layoutX="11.0" layoutY="309.0" text="Nivel: 5 " AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="309.0" />
+      <Label fx:id="starsearned_label" layoutX="11.0" layoutY="339.0" text="Estrellas Ganadas: 590" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="339.0" />
+      <Label fx:id="highscore_lable" layoutX="11.0" layoutY="369.0" text="Highscore: 120 Estrellas" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="369.0" />
+      <ProgressBar fx:id="levelMeter_progressBar" layoutX="77.0" layoutY="309.0" prefHeight="18.0" prefWidth="152.0" progress="0.0" AnchorPane.leftAnchor="77.0" AnchorPane.topAnchor="309.0" />
+      <SplitPane fx:id="splitscreen_splitPlane" dividerPositions="0.33, 0.66" layoutX="11.0" layoutY="397.0" prefHeight="272.0" prefWidth="861.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="397.0">
+        <items>
+          <AnchorPane fx:id="groupCurriculum_anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="curriculum_label" layoutX="14.0" layoutY="14.0" text="Curriculum de Bomberos" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="subGroupCurriculum_anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="296.0">
+               <children>
+                  <Label fx:id="ejercicio_label" layoutX="14.0" layoutY="14.0" text="Ejercicios Adicionales" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="practiceCurriculum_anchorPane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="practice_label" layoutX="14.0" layoutY="14.0" text="Practicas Individuales" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
